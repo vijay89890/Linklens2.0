@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Search, Link as LinkIcon, Zap, Info } from 'lucide-react';
+import PWAInstallPrompt from './PWAInstallPrompt';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -83,6 +84,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </div>
       </footer>
+
+      {/* PWA Install Prompt */}
+      <PWAInstallPrompt />
     </div>
   );
 };
