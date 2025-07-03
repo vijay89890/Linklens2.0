@@ -38,6 +38,7 @@ export default defineConfig({
         scope: '/',
         start_url: '/',
         categories: ['productivity', 'utilities', 'security'],
+        prefer_related_applications: false,
         screenshots: [
           {
             src: '/screenshot-wide.png',
